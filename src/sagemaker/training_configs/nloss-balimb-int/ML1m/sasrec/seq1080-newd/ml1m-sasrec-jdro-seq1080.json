@@ -1,0 +1,28 @@
+{
+    "entry_point": "src/training/train_sasrec_dp.py",
+    "dataset": "ml1m",
+    "num_days": 4,
+    "parameters": 
+    {
+        "max-epochs": "700",
+        "batch-size": "256",
+        "effective-batch-size":"256",
+        "repetitions-filter": "True",
+        "early-stop-on":"none",
+        "nhead":1,
+        "num-layers":3,
+        "dropout":0.5,
+        "sequence-len":200,
+        "dim-feedforward":256,
+        "embedding-size":256,
+        "loss-type": "joint_dro",
+        "groups": "seqdsplit_0.1_0.8_0.1"
+    },
+    "hyperparameters":
+    {
+        "joint-dro-alpha": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95]
+    },
+    "jobname_rename": {
+        "joint-dro-alpha": "jda"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "entry_point": "src/training/train_sasrec_dp.py",
+    "dataset": "retailrocket_views",
+    "num_days": 4,
+    "parameters": 
+    {
+        "max-epochs": "1000",
+        "batch-size": "128",
+        "effective-batch-size":"128",
+        "repetitions-filter": "False",
+        "early-stop-on":"none",
+        "nhead":1,
+        "num-layers":3,
+        "dropout":0.2,
+        "sequence-len":200,
+        "dim-feedforward":256,
+        "embedding-size":256,
+        "loss-type": "erm",
+        "groups": "seqdsplit_balanced"
+    }
+}

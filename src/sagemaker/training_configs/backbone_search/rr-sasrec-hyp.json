@@ -1,0 +1,24 @@
+{
+    "entry_point": "src/training/train_sasrec.py",
+    "dataset": "retailrocket_views",
+    "num_days": 1, 
+    "parameters": {
+        "max-epochs": "600",
+        "batch-size": "256",
+        "repetitions-filter": "False",
+        "num-layers":"3",
+        "sequence-len": "200",
+        "embedding-size":"256"
+    },
+    "hyperparameters":
+    {
+        "dropout" : [0.2, 0.5],
+        "dim-feedforward": [256, 512],
+        "nhead": [1, 2, 4]
+    },
+    "jobname_rename": {
+        "dropout": "drop",
+        "dim-feedforward": "df",
+        "nhead": "nh"
+    }
+}

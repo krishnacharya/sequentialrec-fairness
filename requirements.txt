@@ -1,0 +1,16 @@
+pandas
+matplotlib
+dill
+ir-measures
+torch
+tqdm
+tabulate
+tensorboard
+protobuf==4.*
+requests
+boto3
+sagemaker
+seaborn
+scipy
+pillow
+scikit-learn

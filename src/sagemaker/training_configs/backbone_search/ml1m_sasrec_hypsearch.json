@@ -1,0 +1,21 @@
+{
+    "entry_point": "src/training/train_sasrec.py",
+    "dataset": "ml1m",
+    "num_days": 2, 
+    "parameters": {
+        "max-epochs": "10000",
+        "batch-size": "512",
+        "repetitions-filter":"True"
+    },
+    "hyperparameters":
+    {
+        "embedding-size": [128, 256],
+        "dim-feedforward": [128, 256, 1024],
+        "nhead":[1, 2, 4]
+    },
+    "jobname_rename": {
+        "embedding-size": "es",
+        "dim-feedforward": "df",
+        "nhead": "nh"
+    }
+}
